@@ -33,6 +33,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
+alias dotfiles='cd $HOME/workspace/dotfiles/'
 
 export STARSHIP_CONFIG=$HOME/.config/starship.toml
 eval "$(starship init bash)"
