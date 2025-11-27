@@ -2,6 +2,6 @@
 - [x] Rewrite Neovim configuration
 
 # Optional
-- [] Break up configuration files to multiple files
+- [x] Break up configuration files to multiple files
   - [x] Wezterm
-  - [] Hyprland
+  - [x] Hyprland
