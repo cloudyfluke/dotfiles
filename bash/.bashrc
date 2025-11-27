@@ -35,5 +35,14 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias dotfiles='cd $HOME/workspace/dotfiles/'
 
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
+
 export STARSHIP_CONFIG=$HOME/.config/starship.toml
 eval "$(starship init bash)"
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+. "$HOME/.local/share/../bin/env"
