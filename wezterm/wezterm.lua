@@ -1,0 +1,15 @@
+-- Pull in the wezterm API
+local wezterm = require("wezterm")
+local ssh = require("remotes.ssh")
+local disable = require("misc.disable")
+local display_defaults = require("display.defaults")
+-- This will hold the configuration.
+
+local config = wezterm.config_builder()
+config.warn_about_missing_glyphs = false
+
+display_defaults.set_defaults(config)
+ssh.set_hosts(config)
+disable.disable_keys(config)
+
+return config

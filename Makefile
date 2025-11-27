@@ -14,6 +14,6 @@ hypr:
 	ln -sf $(CURDIR)/hypr $$HOME/.config/hypr
 
 wezterm:
-	ln -sf $(CURDIR)/wezterm/.wezterm.lua $$HOME/.wezterm.lua
+	ln -sf $(CURDIR)/wezterm $$HOME/.config/wezterm
 
 .PHONY: waybar neovim bashrc starship hypr wezterm

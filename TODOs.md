@@ -1,7 +1,7 @@
 # TOD0s
-- [] Rewrite Neovim configuration
+- [x] Rewrite Neovim configuration
 
 # Optional
 - [] Break up configuration files to multiple files
-  - [] Wezterm
+  - [x] Wezterm
   - [] Hyprland
