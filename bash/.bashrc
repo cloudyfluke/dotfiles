@@ -26,7 +26,7 @@ PS1='[\u@\h \W]\$ '
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
-export PATH="$PATH:$HOME/installs/zig:$HOME/installs/Odin"
+export PATH="$PATH:$HOME/installs/zig:$HOME/installs/Odin:$HOME/installs/zls/zig-out/bin:$HOME/installs/ols/bin"
 
 # Alias
 alias ..='cd ..'

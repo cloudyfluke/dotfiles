@@ -1,3 +1,4 @@
+local odinfmt = require("conform.formatters.odinfmt")
 return {
   "stevearc/conform.nvim",
   event = { "BufWritePre" },
@@ -33,6 +34,12 @@ return {
       -- tf = { "tfmt" },
       -- terraform = { "tfmt" },
       sh = { "shfmt" },
+      odinfmt = {
+        -- Change where to find the command if it isn't in your path.
+        command = "odinfmt",
+        args = { "-stdin" },
+        stdin = true,
+      },
     },
     formatters = {
       -- tfmt = {
@@ -40,6 +47,7 @@ return {
       --   args = { "fmt", "-" },
       --   stdin = true,
       -- },
+      odin = { "odinfmt" },
     },
   },
 }

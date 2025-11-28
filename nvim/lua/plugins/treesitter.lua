@@ -50,6 +50,7 @@ return {
       "xml",
       "yaml",
       "go",
+      "zig",
     },
   },
   ---@param opts lazyvim.TSConfig
