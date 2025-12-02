@@ -7,6 +7,7 @@ local display_defaults = require("display.defaults")
 
 local config = wezterm.config_builder()
 config.warn_about_missing_glyphs = false
+config.max_fps = 120
 
 display_defaults.set_defaults(config)
 ssh.set_hosts(config)
