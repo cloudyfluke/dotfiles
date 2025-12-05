@@ -29,6 +29,10 @@ vim.opt.textwidth = 0
 
 vim.o.showtabline = 0
 
+vim.o.updatetime = 250
+
+vim.o.timeoutlen = 100
+
 -- My Custom list
 vim.opt.listchars = {
   space = "·",
