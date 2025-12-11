@@ -1,4 +1,3 @@
-local odinfmt = require("conform.formatters.odinfmt")
 return {
   "stevearc/conform.nvim",
   event = { "BufWritePre" },
