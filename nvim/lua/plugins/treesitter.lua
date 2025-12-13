@@ -1,43 +1,47 @@
 return {
-  "nvim-treesitter/nvim-treesitter",
-  lazy = false,
-  branch = "main",
-  build = ":TSUpdate",
+  {
+    "nvim-treesitter/nvim-treesitter",
+    lazy = false,
+    branch = "main",
+    build = ":TSUpdate",
 
-  config = function()
-    local ts = require("nvim-treesitter")
+    config = function()
+      require("nvim-treesitter.config").setup({
+        install_dir = vim.fn.stdpath("data") .. "/site",
 
-    ts.install({
-      "bash",
-      "c",
-      "diff",
-      "html",
-      "json",
-      "jsonc",
-      "lua",
-      "luadoc",
-      "luap",
-      "markdown",
-      "markdown_inline",
-      "printf",
-      "python",
-      "query",
-      "regex",
-      "toml",
-      "tsx",
-      "vim",
-      "vimdoc",
-      "xml",
-      "yaml",
-      "go",
-      "zig",
-      "odin",
-    })
-
-    ts.setup({
-      highlight = {
-        enable = true,
-      },
-    })
-  end,
+        ensure_installed = {
+          "bash",
+          "c",
+          "diff",
+          "lua",
+          "luadoc",
+          "markdown",
+          "markdown_inline",
+          "query",
+          "vim",
+          "vimdoc",
+          "go",
+          "odin",
+          "zig",
+          "python",
+          "printf",
+          "ninja",
+          "rst",
+        },
+        sync_install = true,
+        auto_install = true,
+        indent = { enable = true },
+        highlight = {
+          enable = true,
+          disable = {},
+          additional_vim_regex_highlighting = false,
+        },
+      })
+    end,
+  },
+  -- {
+  --   "nvim-treesitter/nvim-treesitter-textobjects",
+  --   after = "nvim-treesitter",
+  --   requires = "nvim-treesitter/nvim-treesitter",
+  -- },
 }

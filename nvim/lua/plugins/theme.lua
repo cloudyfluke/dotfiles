@@ -4,6 +4,7 @@ return {
   config = function()
     ---@diagnostic disable-next-line: missing-fields
     require("tokyonight").setup({
+      style = "moon",
       styles = {
         comments = { italic = false },
       },
