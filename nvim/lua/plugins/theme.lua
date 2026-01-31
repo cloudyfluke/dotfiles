@@ -7,7 +7,11 @@ return {
       style = "moon",
       styles = {
         comments = { italic = false },
+        sidebars = "transparent",
+        floats = "transparent",
       },
+      -- NOTE: On the fence with transparent. Doesn't look right
+      transparent = true,
     })
 
     vim.cmd.colorscheme("tokyonight-night")
